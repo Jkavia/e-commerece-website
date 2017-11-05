@@ -29,7 +29,7 @@ angular.module('productApp', []).controller(
 						});
 			};
 			
-			$scope.loadColorAc = function() 
+			$scope.loadColorAc = function() {
 				console.log($scope.gbreq.reqData);
 				$http.post('rest/getColorAccessories',$scope.gbreq).then(
 						function(response) {
